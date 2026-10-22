@@ -1,0 +1,44 @@
+# Зависимости программы (только Windows).
+# Самое главное - вам нужен Python.
+# Установка: pip install -r requirements.txt
+# Нужно отдельно: Ollama (для разговорного ИИ) и папка с моделью Vosk (изначально она есть, но вы можете заменить модель, папка model).
+
+#   Обязательное
+
+# Распознавание голоса и команд.
+vosk>=0.3.45
+sounddevice>=0.5.6
+numpy>=2.5.2
+
+# Whisper: точное распознавание речи (заметки, поиск, разговор).
+faster-whisper>=1.2.1
+
+# Голос Silero (самый живой), а при запуске Whisper на видеокарте обычно ещё и даёт ему нужные CUDA-библиотеки.
+# Для видеокарты Nvidia ставить так: pip install torch --index-url https://download.pytorch.org/whl/cu126
+torch>=2.14.1
+
+# Управление Windows: громкость, окна, буфер обмена, процессы, корзина.
+pywin32>=312
+comtypes>=1.4.16
+pycaw>=20251023
+psutil>=7.2.2
+pyperclip>=1.11.0
+winshell>=0.6
+Pillow>=12.3.0
+
+# Медиа-клавиши и поиск проигрывателя Яндекс Музыки (media.py).
+winrt-runtime>=3.2.1
+winrt-Windows.Foundation>=3.2.1
+winrt-Windows.Foundation.Collections>=3.2.1
+winrt-Windows.Media.Control>=3.2.1
+
+# Сайт в локальной сети (Werkzeug ставится вместе с Flask).
+Flask>=3.1.3
+
+# Поиск в интернете для разговорного ИИ.
+ddgs>=9.16.0
+duckduckgo_search
+
+#    Необязательное 
+# Запасной голос Windows (в том числе RHVoice Anna)
+# pyttsx3>=2.99
