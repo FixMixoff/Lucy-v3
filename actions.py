@@ -634,6 +634,6 @@ HANDLERS = {
     "screenshot": screenshot, "add_note": add_note, "read_notes": read_notes,
     "clear_notes": clear_notes, "save_clipboard": save_clipboard, "mon_off": mon_off,
     "empty_trash": empty_trash, "off": power_off, "cancel_off": cancel_off,
-    "youtube": youtube, "discord": discord, "dnevnik": dnevnik, "send_to_phone": send_to_phone,
+    "youtube": youtube, "discord": discord, "send_to_phone": send_to_phone,
     "game_on": game_on, "game_off": game_off,
 }
